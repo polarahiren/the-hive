@@ -1,0 +1,195 @@
+@import 'variables';
+
+body, html{
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+*{
+ outline: none !important;
+}
+
+a, input, button{
+ outline: none !important;
+ box-shadow: none !important;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.align--center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@for $i from 1 through 20 {
+  .height--#{$i*5} {
+    height: #{5*$i}vh;
+  }
+}
+
+@for $i from 1 through 40 {
+  .padding-top--#{$i*5}px {
+    padding-top: #{5*$i}px;
+  }
+}
+
+
+/*------- Font Size Classes -------*/
+
+
+.headingL {
+  font-size: $headingL;
+}
+
+.headingM {
+  font-size: $headingM;
+}
+
+.headingS {
+  font-size: $headingS;
+}
+
+.headingXS {
+  font-size: $headingXS;
+}
+
+
+
+.bodyL {
+  font-size: $headingL;
+}
+
+.bodyM {
+  font-size: $headingM;
+}
+
+.bodyS {
+  font-size: $headingS;
+}
+
+.bodyXS {
+  font-size: $headingXS;
+}
+
+.tagline {
+  font-size: $taglineSize;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+
+/*------- Colour Classes -------*/
+
+
+.bg--white {
+  background-color: $white;
+}
+
+.bg--black {
+  background-color: $black;
+}
+
+.color--black {
+  color: $black;
+  &:hover, &:focus, &:active {
+    color: $black;
+  }
+}
+
+.color--white {
+  color: $white;
+
+  &:hover, &:focus, &:active {
+    color: $white;
+  }
+}
+
+
+/*------- Miscellaneous Classes -------*/
+
+
+.wide--wrap {
+  max-width: 1300px;
+  margin: auto;
+  width: 90%;
+}
+
+.half--opacity {
+  opacity: 0.5;
+}
+
+.border--radius {
+  border-radius: 10px;
+}
+
+.absolute--center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+.default--button {
+  display: inline-block;
+  position: relative;
+  color: $white;
+  font-weight: 500;
+  padding: 15px 25px;
+  min-width: 130px;
+  border: none;
+  background: $black;
+  text-align: center;
+  font-size: $buttonSize;
+  appearance: none;
+  -webkit-appearance: none;
+  @include generate-transition(all, 500ms, ease);
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.underline--link {
+  display: inline-block;
+  border-bottom: 1px solid;
+}
+
+// default css
+li{
+  list-style: none;
+}
+
+.object-cover{
+  object-fit: cover;
+  object-position: center;
+}
+
+.slick-overflow .slick-list{
+  overflow: visible;
+}

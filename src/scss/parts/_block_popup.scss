@@ -1,0 +1,29 @@
+.popup--block {
+  &__image {
+    height: 350px;
+  }
+}
+
+.info--popup {
+  width: calc(100% - 110px);
+  max-width: 1400px;
+  padding: 70px 60px;
+
+    img {
+      height: 60vh;
+      object-fit: cover;
+    }
+
+
+  &__text {
+    max-height: 60vh;
+    overflow: scroll;
+    padding-bottom: 40px;
+    -ms-overflow-style: none;
+
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

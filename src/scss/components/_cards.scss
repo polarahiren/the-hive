@@ -1,0 +1,110 @@
+
+.card-hover{
+    img{
+        transform: scale(1);
+        transition: 0.4s all ease-in-out;
+    }
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+/* card-with-inner-body */
+.card-with-inner-body{
+  position: relative;
+
+  .card-body{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+    padding:30px;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 26%, rgba(0,0,0,0.6) 99%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 26%,rgba(0,0,0,0.6) 99%,rgba(0,0,0,0.6) 100%);
+    color: $white;
+      @include media-breakpoint-down(lg) {
+          padding:20px;
+      }
+
+      .card-title{
+        font-size: $headingS;
+        margin-bottom: 20px;
+          @include media-breakpoint-down(md) {
+              margin-bottom: 15px;
+          }
+    }
+  }
+}
+
+
+
+.story-card{
+    @include media-breakpoint-up(lg) {
+        margin-bottom: -20px;
+    }
+
+    .card-img{
+        height: 300px;
+        overflow: hidden;
+        border-radius: 0px;
+        @include media-breakpoint-up(md) {
+            height: 350px;
+        }
+        @include media-breakpoint-up(lg) {
+            height: 450px;
+        }
+    }
+    .story-body {
+        @include media-breakpoint-up(md) {
+            padding-left: 20px;
+            padding-right: 20px;
+            box-shadow: 0 0 36px rgb(113 113 113 / 10%);
+        }
+        @include media-breakpoint-up(lg) {
+            padding-left: 35px;
+            padding-right: 35px;
+            transform: translateY(-100px);
+        }
+
+        h3{
+            font-weight: normal;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+        }
+        a{
+            font-size: 16px;
+        }
+    }
+}
+
+.insight-img,
+.product-card-img{
+    height: 400px;
+    overflow: hidden;
+    @include media-breakpoint-down(lg) {
+        height: 300px;
+    }
+}
+
+/* insights card */
+.insights-body{
+    h3{
+        font-size: 22px;
+        @include media-breakpoint-down(lg) {
+            font-size: 18px;
+        }
+    }
+    .read-more{
+        font-size: 16px;
+        text-decoration: underline;
+    }
+}
+/* END insights card */

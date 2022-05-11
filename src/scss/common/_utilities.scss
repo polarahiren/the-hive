@@ -1,0 +1,96 @@
+
+.small-label{
+    font-size: $bodyXS;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.text-xs{
+    font-size: $bodyXS;
+}
+.text-sm{
+    font-size: $bodyS;
+}
+.text-base{
+    font-size: $bodyM;
+}
+.text-lg{
+    font-size: $bodyL;
+}
+
+.text-title{
+    font-size: 32px;
+    @include media-breakpoint-up(lg) {
+        font-size: 38px;
+    }
+}
+
+
+
+.font-normal{
+    font-weight: 400;
+}
+
+.font-medium{
+    font-weight: 500;
+}
+.font-semibold{
+    font-weight: 600;
+}
+
+.font-bold{
+    font-weight: 700;
+}
+
+.text-gray {
+    color: $primary;
+    opacity: 0.5;
+}
+
+.tracking-wide{
+    letter-spacing: 0.1em;
+}
+.bg-gray {
+    background-color: $gray;
+}
+
+.bg-light-gray {
+    background-color: #F4F4F4;
+}
+
+.border-gray-top{
+    border-top: 1px solid rgba(112, 112, 112, 0.5);
+}
+.border-gray-bottom{
+    border-bottom: 1px solid rgba(112, 112, 112, 0.5);
+}
+
+.bg-green{
+    background-color: $green;
+}
+.text-green{
+    color: $green;
+}
+
+
+.transition{
+    transition: 0.4s all ease-in-out;
+}
+
+.bg-primary-hover{
+    background-color: $primary;
+
+    &:hover{
+        background-color: $secondary;
+    }
+}
+
+.z-index{
+    z-index: 9;
+}
+.leading-relax{
+    line-height: 2;
+}
+.cursor-pointer{
+    cursor: pointer;
+}

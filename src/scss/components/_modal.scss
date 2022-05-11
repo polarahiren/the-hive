@@ -1,0 +1,197 @@
+
+.info-modal {
+    .modal {
+        .modal-dialog {
+            margin: 0px 0px auto auto;
+            height: 100vh;
+            transform: translate(50px, 0px);
+            max-width: 650px;
+            @include media-breakpoint-down(md) {
+                max-width: 100%;
+            }
+        }
+
+        .modal-content {
+            height: 100%;
+            border: none;
+            padding: 50px;
+            overflow-y: auto;
+
+            @include media-breakpoint-down(md) {
+                padding:30px;
+            }
+
+            .modal-header{
+                border: none;
+            }
+        }
+
+        .modal-body {
+            flex-grow: 1;
+            h3{
+                color: $gray;
+                border-bottom: 1px solid #e9e9e9;
+                font-weight: 500;
+            }
+        }
+        &.fade.show .modal-dialog {
+            transform: translate(0px, 0px);
+        }
+    }
+}
+
+/* enquiry modal*/
+.enquiry-modal{
+    .modal {
+        .modal-dialog {
+            max-width: 700px;
+        }
+        .contact-form {
+            max-width: 430px;
+            margin: 0 auto;
+            label {
+                color: $white;
+                margin-bottom: 6px;
+            }
+
+            .btn.btn-primary{
+                min-width: 180px;
+            }
+            .browse-btn {
+                font-weight: 500;
+                cursor: pointer;
+                text-align: center;
+                button {
+                    border: none;
+                    display: inline-block;
+                    padding: 10px 15px;
+                    font-size: 13px;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    background: rgb(255 255 255 / 70%);
+                }
+                span{
+                    font-size: 13px;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .modal-content {
+            border: none;
+            border-radius: 5px;
+            @include media-breakpoint-down(md) {
+                padding:30px 20px;
+            }
+        }
+        .enquiry-bg{
+            height: 400px;
+            bottom: -34px;
+            width: 220%;
+            right: -134px;
+            left: auto !important;
+        }
+    }
+}
+
+.submit-modal{
+    .modal{
+        a.menu-close.d-block {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 99;
+        }
+
+        .modal-dialog{
+            max-width: 900px;
+            width: 90%;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                margin: 0px 0px auto auto;
+                height: 100vh;
+
+                .modal-content{
+                    height: 100%;
+                }
+                .modal-body{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+.team-modal{
+    .modal-dialog{
+        max-width: 1000px;
+        @include media-breakpoint-down(md) {
+            margin: 0px;
+        }
+
+        @include media-breakpoint-up(md) {
+            width: 90%;
+        }
+    }
+    .modal-content{
+        @include media-breakpoint-up(md) {
+            border-radius: 5px;
+            overflow: hidden;
+            height: 550px;
+            overflow-y: auto;
+        }
+    }
+    .modal-body{
+        padding: 0px;
+        height: 100%;
+        overflow-y: auto;
+
+        @include media-breakpoint-up(lg) {
+            h3 {
+                font-size: 32px;
+            }
+        }
+        @include media-breakpoint-up(md) {
+            .team-img{
+                width: 46%;
+            }
+            .team-content{
+                width: 54%;
+            }
+        }
+    }
+    .btn-close{
+        right: 20px;
+        top: 20px;
+        z-index: 9;
+    }
+}
+
+
+
+
+/* checkout modal */
+.checkout-modal{
+    .modal{
+        .modal-dialog{
+            max-width: 100%;
+            margin: 0px;
+            min-height: 100%;
+        }
+    }
+}
+.order-modal{
+    .modal{
+        .modal-dialog{
+            max-width: 650px;
+        }
+    }
+}
+/* END checkout modal */
