@@ -10,43 +10,32 @@ button,
 
 
 .btn{
-    padding: 14px 32px;
+    font-size: $bodyXS;
+    padding: 17px 15px;
+    min-width: 192px;
     color: $white;
     border-width: 1px;
     border-style: solid;
     transition: 0.4s all ease-in-out;
     position: relative;
     font-weight: 500;
+    text-align: center;
     text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    border-radius: 0px;
+    clip-path: polygon(4% 0, 100% 0%, 96% 100%, 0% 100%);
+
     &:hover{
         color: $white;
     }
 }
 
-.btn-with-arrow{
-    padding: 14px 60px 14px 26px;
-    background-image: url("../images/icons/btn-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center right 18px;
-    text-align: left;
 
+.btn-primary{
     &:hover{
-        background-position: center right 10px;
+        background-color: $secondary;
+        border-color:  $secondary;
     }
-}
-
-.btn-with-icon{
-    width: 46px;
-    height: 46px;
-    border: none;
-    transition: 0.4s all ease-in-out;
-    border-radius: 40px;
-    background-color: #FD7F6B;
-}
-
-
-.btn-white-outline{
-    background-color: transparent;
-    border-color: $white;
-    color: $white;
 }
