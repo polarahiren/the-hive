@@ -21,6 +21,25 @@ export class App{
       ]
   });
 
+//   testimonial slider
+
+    $('.testimonial-slider').slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      autoplay: true,
+      slidesToShow: 1,
+      responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: false,
+            }
+        }
+    ]
+    });
+
   /* related products slider */
   $('.logos-slider').slick({
       dots: false,

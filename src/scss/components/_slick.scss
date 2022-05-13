@@ -69,6 +69,51 @@
     }
 }
 
+
+.slick-dots-lines {
+    ul.slick-dots {
+        bottom: -40px;
+        @include media-breakpoint-up(xl) {
+            bottom: -60px;
+        }
+
+        li {
+            margin: 0px 5px;
+            width: auto;
+
+            button {
+                padding: 0px;
+                height: 2px;
+                width: 18px;
+                background: $white;
+                opacity: 0.3;
+                transition: 0.2s all ease-in-out;
+            }
+
+            button:before {
+                display: none;
+            }
+
+            &.slick-active {
+                button {
+                    width: 35px;
+                    background: $white;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &.slick-dots-primary{
+        ul.slick-dots {
+            button, .slick-active button {
+                background: $primary;
+            }
+        }
+    }
+}
+
+
 .slider-with-inner-body {
     .card-with-inner-body {
         position: relative;
@@ -161,99 +206,74 @@
 
 
 /* testimonial slider */
-.testimonial-slider {
-    h3 {
-        line-height: 1.6;
-        @include media-breakpoint-down(md) {
-            font-size: 22px;
-        }
-    }
+// .testimonial-slider {
+//     .slick-dots {
 
-    p {
-        font-size: 16px;
-        color: $gray;
-        @include media-breakpoint-down(md) {
-            font-size: 14px;
-        }
-    }
+//         @include media-breakpoint-up(md) {
+//             display: flex;
+//             bottom: auto;
+//             right: 0;
+//             flex-direction: column;
+//             top: 50%;
+//             transform: translateY(-50%);
+//             width: 5px;
 
-    .col-12 {
-        max-width: 100%;
-        @include media-breakpoint-up(lg) {
-            max-width: 70%;
-        }
-        @include media-breakpoint-up(xl) {
-            max-width: 50%;
-        }
-    }
+//             li {
+//                 height: auto;
+//                 margin-bottom: 5px;
 
-    .slick-dots {
+//                 button {
+//                     height: 20px;
 
-        @include media-breakpoint-up(md) {
-            display: flex;
-            bottom: auto;
-            right: 0;
-            flex-direction: column;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 5px;
+//                     &:before {
+//                         content: "";
+//                         width: 2px;
+//                         background-color: $secondary;
+//                         opacity: 1;
+//                         transition: 0.2s all ease-in-out;
+//                     }
+//                 }
 
-            li {
-                height: auto;
-                margin-bottom: 5px;
+//                 &.slick-active button {
+//                     height: 40px;
 
-                button {
-                    height: 20px;
+//                     &:before {
+//                         height: 40px;
+//                         background-color: $primary;
+//                     }
+//                 }
+//             }
+//         }
+//         @include media-breakpoint-down(md) {
+//             width: auto;
+//             li {
+//                 width: auto;
+//                 margin-bottom: 5px;
 
-                    &:before {
-                        content: "";
-                        width: 2px;
-                        background-color: $secondary;
-                        opacity: 1;
-                        transition: 0.2s all ease-in-out;
-                    }
-                }
+//                 button {
+//                     width: 20px;
 
-                &.slick-active button {
-                    height: 40px;
+//                     &:before {
+//                         content: "";
+//                         height: 2px;
+//                         background-color: $secondary;
+//                         opacity: 1;
+//                         transition: 0.2s all ease-in-out;
+//                     }
+//                 }
 
-                    &:before {
-                        height: 40px;
-                        background-color: $primary;
-                    }
-                }
-            }
-        }
-        @include media-breakpoint-down(md) {
-            width: auto;
-            li {
-                width: auto;
-                margin-bottom: 5px;
+//                 &.slick-active button {
+//                     width: 40px;
 
-                button {
-                    width: 20px;
-
-                    &:before {
-                        content: "";
-                        height: 2px;
-                        background-color: $secondary;
-                        opacity: 1;
-                        transition: 0.2s all ease-in-out;
-                    }
-                }
-
-                &.slick-active button {
-                    width: 40px;
-
-                    &:before {
-                        width: 40px;
-                        background-color: $primary;
-                    }
-                }
-            }
-        }
-    }
-}
+//                     &:before {
+//                         width: 40px;
+//                         background-color: $primary;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 /* END testimonial slider */
 

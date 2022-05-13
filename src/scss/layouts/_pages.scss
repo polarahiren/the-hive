@@ -1,5 +1,5 @@
 // home page
-.hero-section{
+.hero-section {
     @include media-breakpoint-down(md) {
         background-color: $light;
     }
@@ -8,16 +8,17 @@
         color: #fff;
     }
 
-    .hero-slide{
+    .hero-slide {
         @include media-breakpoint-up(md) {
-        height: 100vh;
+            height: 100vh;
 
-            &:after{
+            &:after {
                 content: "";
                 width: 100%;
                 height: 100%;
                 display: block;
-                background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+                /* Chrome10-25,Safari5.1-6 */
                 position: absolute;
                 top: 0;
                 left: 0px;
@@ -25,9 +26,9 @@
         }
     }
 
-    .hero-slide{
+    .hero-slide {
         @include media-breakpoint-up(md) {
-            .hero-slide-box{
+            .hero-slide-box {
                 position: absolute;
                 width: 100%;
                 top: 50%;
@@ -39,26 +40,28 @@
         }
     }
 
-    h1{
+    h1 {
         font-size: 40px;
 
         @include media-breakpoint-up(md) {
-            font-size: 60px;    
+            font-size: 60px;
         }
     }
 
-    p{
-        @include media-breakpoint-down(md) {  
+    p {
+        @include media-breakpoint-down(md) {
             color: $secondary;
         }
-        @include media-breakpoint-up(md) {  
+
+        @include media-breakpoint-up(md) {
             font-size: 20px;
         }
     }
-    
 
-    .hero-banner{
+
+    .hero-banner {
         height: 100%;
+
         @include media-breakpoint-down(md) {
             height: 420px;
             object-position: center right;
@@ -67,13 +70,13 @@
 
 
     @include media-breakpoint-up(md) {
-        .btn-primary:last-child{
+        .btn-primary:last-child {
             background-color: transparent !important;
             border-color: transparent !important;
             color: $white !important;
             min-width: 140px !important;
 
-            &:hover{
+            &:hover {
                 background-color: transparent !important;
                 border-color: transparent !important;
             }
@@ -82,8 +85,8 @@
 }
 
 
-.who-we-are-section{
-    h2{
+.who-we-are-section {
+    h2 {
         font-size: 40px;
 
         @include media-breakpoint-up(md) {
@@ -91,22 +94,31 @@
         }
     }
 
-    .bg-section-img{
+    .bg-section-img {
         max-width: 450px;
-        transform: translateX(50%) translateX(50px);
+        transform: translateX(50%) translateY(50px);
+        z-index: 0;
 
         @include media-breakpoint-up(md) {
             max-width: 730px;
             width: 80%;
+            transform: translateX(20%) translateY(0px);
+        }
+
+        @include media-breakpoint-up(xl) {
+            transform: translateX(00%);
         }
     }
 }
 
 // what we do section
-.what-we-do-section{
-    background: -webkit-linear-gradient(top, rgba(237,108,79,1) 0%,rgba(237,108,79,1) 50%,rgba(4,60,57,1) 50%,rgba(4,60,57,1) 100%); /* Chrome10-25,Safari5.1-6 */
+.what-we-do-section {
+    background: -webkit-linear-gradient(top, rgba(237, 108, 79, 1) 0%, rgba(237, 108, 79, 1) 50%, rgba(4, 60, 57, 1) 50%, rgba(4, 60, 57, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
 }
+
 // END what we do section
+
 
 
 .services-lists-group {
@@ -114,28 +126,33 @@
     padding: 44px 36px;
     border-radius: 0px;
     z-index: 9;
-    @include media-breakpoint-down(lg){
+
+    @include media-breakpoint-down(lg) {
         padding: 20px 25px;
         border-radius: 22px;
     }
-    @include media-breakpoint-up(md){
+
+    @include media-breakpoint-up(md) {
         position: sticky;
     }
 
-    &.bg-secondary{
-        .list-group-item.active{
+    &.bg-secondary {
+        .list-group-item.active {
             border-color: $primary;
         }
     }
-    &.bg-primary{
-        .list-group-item.active{
+
+    &.bg-primary {
+        .list-group-item.active {
             border-color: $secondary;
         }
     }
-    @include media-breakpoint-down(md){
+
+    @include media-breakpoint-down(md) {
         flex-wrap: nowrap;
         overflow: auto;
     }
+
     .list-group-item {
         border-color: #fff;
         border-style: solid;
@@ -146,22 +163,76 @@
         font-size: $headingXS;
         letter-spacing: -0.18px;
         transition: 0.2s all ease-in-out;
-        @include media-breakpoint-up(md){
+
+        @include media-breakpoint-up(md) {
             padding: 0px 0px 0px 0px;
             margin-bottom: 16px;
         }
-        @include media-breakpoint-down(md){
+
+        @include media-breakpoint-down(md) {
             white-space: nowrap;
         }
-        &:hover{
+
+        &:hover {
             color: $primary;
         }
-        &.active{
+
+        &.active {
             border-width: 0px 0px 0px 2px;
             padding-left: 10px;
         }
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 0;
         }
     }
+}
+
+// testimonial
+.testimonial-slider {
+    h2 {
+        line-height: 1.3;
+    }
+}
+
+// END testimonial
+.process-section {
+    .process-img {
+        box-shadow: 0px 0px 36px rgb(2 31 30 / 40%);
+    }
+
+    @include media-breakpoint-down(md) {
+        h2 {
+            font-size: 50px;
+        }
+    }
+}
+
+
+.process-card {
+    .process-img {
+        padding: 25px;
+        width: 260px;
+        height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $secondary;
+        border-radius: 999px;
+        margin: 0 auto 25px;
+
+        img {
+            width: 80%;
+        }
+
+        @include media-breakpoint-between(md, lg) {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
 }
