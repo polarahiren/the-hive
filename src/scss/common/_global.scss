@@ -195,6 +195,9 @@ li{
   overflow: visible;
 }
 
+.border-bottom.border-light {
+  border-color: rgba($color: $white, $alpha: 0.34) !important;
+}
 
 
 @include media-breakpoint-down(md) {

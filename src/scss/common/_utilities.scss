@@ -2,7 +2,7 @@
 .small-label{
     font-size: $bodyXS;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.68px;
     font-weight: 500;
 }
 
@@ -17,6 +17,159 @@
 }
 .text-lg{
     font-size: $bodyL;
+}
+
+.normal-content{
+    letter-spacing: -0.18px;
+    line-height: 32px;
+}
+.text-xs{
+    font-size: $bodyXS;
+}
+.text-sm{
+    font-size: $bodyS;
+}
+.text-base{
+    font-size: $bodyM;
+}
+.text-lg{
+    font-size: $bodyL; 
+}
+.text-xl{
+    font-size: $text-xl;
+}
+.text-2xl{
+    font-size: $text-2xl;
+    line-height: 30px;
+}
+.text-26{
+    font-size: $text-26;
+}
+.text-3xl{
+    font-size: $text-3xl;
+    line-height: 41px;
+}
+.text-4xl{
+    font-size: $text-4xl;
+    line-height: 44px;
+}
+.text-5xl{
+    font-size: $text-5xl;
+    line-height: 46px;
+}
+.text-6xl{
+    font-size: $text-6xl;
+    line-height: 56px;
+    letter-spacing: 0.36px;
+}
+.text-7xl{
+    font-size: $text-7xl;
+    line-height: 57px;
+}
+.text-8xl{
+    font-size: $text-8xl;
+    line-height: 72px;
+    letter-spacing: 0.66px;
+}
+.text-9xl{
+    font-size: $text-9xl;
+}
+.text-10xl{
+    font-size: $text-10xl;
+}
+.text-large{
+    font-size: $text-large;
+    line-height: 162px;
+}
+
+@include media-breakpoint-up(sm){
+    .sm\:text-xs{font-size: $bodyXS;}
+    .sm\:text-sm{font-size: $bodyS;}
+    .sm\:text-base{font-size: $bodyM;}
+    .sm\:text-lg{font-size: $bodyL;}
+    .sm\:text-xl{font-size: $text-xl;}
+    .sm\:text-2xl{font-size: $text-2xl;}
+    .sm\:text-3xl{font-size: $text-3xl;}
+    .sm\:text-4xl{font-size: $text-4xl;}
+    .sm\:text-5xl{font-size: $text-5xl;}
+    .sm\:text-6xl{font-size: $text-6xl;}
+    .sm\:text-7xl{font-size: $text-7xl;}
+    .sm\:text-8xl{font-size: $text-8xl;}
+    .sm\:text-9xl{font-size: $text-9xl;}
+    .sm\:text-10xl{font-size: $text-10xl;}
+    .sm\:text-large{font-size: $text-large;}
+}
+
+@include media-breakpoint-up(md){
+    .md\:text-xs{font-size: $bodyXS;}
+    .md\:text-sm{font-size: $bodyS;}
+    .md\:text-base{font-size: $bodyM;}
+    .md\:text-lg{font-size: $bodyL;}
+    .md\:text-xl{font-size: $text-xl;}
+    .md\:text-2xl{font-size: $text-2xl;}
+    .md\:text-3xl{font-size: $text-3xl;}
+    .md\:text-4xl{font-size: $text-4xl;}
+    .md\:text-5xl{font-size: $text-5xl;}
+    .md\:text-6xl{font-size: $text-6xl;}
+    .md\:text-7xl{font-size: $text-7xl;}
+    .md\:text-8xl{font-size: $text-8xl;}
+    .md\:text-9xl{font-size: $text-9xl;}
+    .md\:text-10xl{font-size: $text-10xl;}
+    .md\:text-large{font-size: $text-large;}
+}
+
+@include media-breakpoint-up(lg){
+    .lg\:text-xs{font-size: $bodyXS;}
+    .lg\:text-sm{font-size: $bodyS;}
+    .lg\:text-base{font-size: $bodyM;}
+    .lg\:text-lg{font-size: $bodyL;}
+    .lg\:text-xl{font-size: $text-xl;}
+    .lg\:text-2xl{font-size: $text-2xl;}
+    .lg\:text-3xl{font-size: $text-3xl;}
+    .lg\:text-4xl{font-size: $text-4xl;}
+    .lg\:text-5xl{font-size: $text-5xl;}
+    .lg\:text-6xl{font-size: $text-6xl;}
+    .lg\:text-7xl{font-size: $text-7xl;}
+    .lg\:text-8xl{font-size: $text-8xl;}
+    .lg\:text-9xl{font-size: $text-9xl;}
+    .lg\:text-10xl{font-size: $text-10xl;}
+    .lg\:text-large{font-size: $text-large;}
+}
+
+@include media-breakpoint-up(xl){
+    .xl\:text-xs{font-size: $bodyXS;}
+    .xl\:text-sm{font-size: $bodyS;}
+    .xl\:text-base{font-size: $bodyM;}
+    .xl\:text-lg{font-size: $bodyL;}
+    .xl\:text-xl{font-size: $text-xl;}
+    .xl\:text-2xl{font-size: $text-2xl;}
+    .xl\:text-3xl{font-size: $text-3xl;}
+    .xl\:text-4xl{font-size: $text-4xl;}
+    .xl\:text-5xl{font-size: $text-5xl;}
+    .xl\:text-6xl{font-size: $text-6xl;}
+    .xl\:text-7xl{font-size: $text-7xl;}
+    .xl\:text-8xl{font-size: $text-8xl;}
+    .xl\:text-9xl{font-size: $text-9xl;}
+    .xl\:text-10xl{font-size: $text-10xl;}
+    .xl\:text-large{font-size: $text-large;}
+}
+
+@include media-breakpoint-up(xxl){
+    .xxl\:text-xs{font-size: $bodyXS;}
+    .xxl\:text-sm{font-size: $bodyS;}
+    .xxl\:text-base{font-size: $bodyM;}
+    .xxl\:text-lg{font-size: $bodyL;}
+    .xxl\:text-xl{font-size: $text-xl;}
+    .xxl\:text-2xl{font-size: $text-2xl;}
+    .xxl\:text-3xl{font-size: $text-3xl;}
+    .xxl\:text-4xl{font-size: $text-4xl;}
+    .xxl\:text-5xl{font-size: $text-5xl;}
+    .xxl\:text-6xl{font-size: $text-6xl;}
+    .xxl\:text-7xl{font-size: $text-7xl;}
+    .xxl\:text-8xl{font-size: $text-8xl;}
+    .xxl\:text-9xl{font-size: $text-9xl;}
+    .xxl\:text-10xl{font-size: $text-10xl;}
+    .xxl\:text-large{font-size: $text-large;}
 }
 
 .text-title{

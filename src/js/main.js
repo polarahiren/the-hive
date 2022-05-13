@@ -91,3 +91,19 @@ $(".mega-menu-back").click(function () {
     $("body").removeClass("fixed-bg");
     $(".mega-menu").removeClass("open");
 });
+
+/* smooth scroll */
+var targetScriollOffset = 0;
+jQuery('[data-scroll="true"]').click(function (e) {
+    e.preventDefault();
+    var target = jQuery(jQuery(this).attr("href"));
+    targetScriollOffset = target.data("scroll-offset");
+    if (typeof targetScriollOffset !== typeof undefined && targetScriollOffset !== false) {
+        var position = target.offset().top - targetScriollOffset;
+    } else {
+        var position = target.offset().top;
+    }
+    jQuery("body, html").animate({
+        scrollTop: position
+    });
+});

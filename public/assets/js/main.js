@@ -11597,6 +11597,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _parts_app_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parts/app.js */ "./src/js/parts/app.js");
 /* harmony import */ var _parts_plugins_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./parts/plugins.js */ "./src/js/parts/plugins.js");
 /* harmony import */ var _parts_parts_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./parts/parts.js */ "./src/js/parts/parts.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
 
 
 
@@ -11666,6 +11668,24 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".mega-menu-back").click(function 
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".custom-mega-menu").removeClass("show");
   jquery__WEBPACK_IMPORTED_MODULE_0___default()("body").removeClass("fixed-bg");
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".mega-menu").removeClass("open");
+});
+/* smooth scroll */
+
+var targetScriollOffset = 0;
+jQuery('[data-scroll="true"]').click(function (e) {
+  e.preventDefault();
+  var target = jQuery(jQuery(this).attr("href"));
+  targetScriollOffset = target.data("scroll-offset");
+
+  if (_typeof(targetScriollOffset) !== ( true ? "undefined" : 0) && targetScriollOffset !== false) {
+    var position = target.offset().top - targetScriollOffset;
+  } else {
+    var position = target.offset().top;
+  }
+
+  jQuery("body, html").animate({
+    scrollTop: position
+  });
 });
 
 /***/ }),
