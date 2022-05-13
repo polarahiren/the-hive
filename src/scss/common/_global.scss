@@ -194,3 +194,12 @@ li{
 .slick-overflow .slick-list{
   overflow: visible;
 }
+
+
+
+@include media-breakpoint-down(md) {
+  .-mx-3{
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}

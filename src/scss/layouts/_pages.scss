@@ -80,3 +80,30 @@
         }
     }
 }
+
+
+.who-we-are-section{
+    h2{
+        font-size: 40px;
+
+        @include media-breakpoint-up(md) {
+            font-size: 50px;
+        }
+    }
+
+    .bg-section-img{
+        max-width: 450px;
+        transform: translateX(50%) translateX(50px);
+
+        @include media-breakpoint-up(md) {
+            max-width: 730px;
+            width: 80%;
+        }
+    }
+}
+
+// what we do section
+.what-we-do-section{
+    background: -webkit-linear-gradient(top, rgba(237,108,79,1) 0%,rgba(237,108,79,1) 50%,rgba(4,60,57,1) 50%,rgba(4,60,57,1) 100%); /* Chrome10-25,Safari5.1-6 */
+}
+// END what we do section
