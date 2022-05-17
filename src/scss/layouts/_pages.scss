@@ -11,7 +11,10 @@
     .hero-slide{
         @include media-breakpoint-up(md) {
         height: 100vh;
+        }
 
+        .hero-slide-img{
+            position: relative;
             &:after{
                 content: "";
                 width: 100%;
@@ -57,7 +60,7 @@
     }
     
 
-    .hero-banner{
+    .hero-slide-img{
         height: 100%;
         @include media-breakpoint-down(md) {
             height: 420px;
@@ -101,6 +104,14 @@
         }
     }
 }
+
+// who we are page
+.hero-inner-slide{
+    @include media-breakpoint-up(md) {
+    height: 750px !important;
+    }
+}
+// END who we are page
 
 // what we do section
 .what-we-do-section{
