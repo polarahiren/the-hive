@@ -18,7 +18,9 @@
 .text-lg{
     font-size: $bodyL;
 }
-
+.normal-label{
+    letter-spacing: -0.14px;
+}
 .normal-content{
     letter-spacing: -0.18px;
     line-height: 32px;
