@@ -186,6 +186,41 @@
         }
     }
 }
+
+.our-purpose-section{
+    .our-section-bg{
+        img{
+            object-position: right center;
+        }
+        @include media-breakpoint-down(md) {
+            position: static !important;
+            height: 300px !important;
+
+        }
+
+        &:before{
+            content: "";
+            width: 35%;
+            height: 100%;
+            background-color: $primary;
+            clip-path: polygon(0 0, 14% 0, 100% 100%, 0 100%);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                height: calc(300px + 5px);
+                top: auto;
+                left: auto;
+                bottom: 0px;
+                right: 0px;
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 6%);
+            }
+        }
+    }
+}
 // END who we are page
 
 
