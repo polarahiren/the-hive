@@ -148,7 +148,6 @@ p.error-message {
     width: 100%;
     font-size: 14px;
     line-height: 1.8;
-    box-shadow: 0 0 36px rgb(113 113 113 / 10%);
     z-index: 10;
     @include media-breakpoint-up(md) {
         width: 50%;
@@ -166,7 +165,7 @@ p.error-message {
 /* END story section */
 
 .box-large-image {
-    width: 55%;
+    width: 50%;
     @include media-breakpoint-down(md) {
         width: 100%;
         position: relative !important;
@@ -186,6 +185,10 @@ p.error-message {
     .story-box {
         margin-left: auto;
         margin-right: 0;
+
+        @include media-breakpoint-up(lg) {
+            padding-left: 100px !important;
+        }
     }
 }
 
@@ -201,5 +204,9 @@ p.error-message {
     .story-box {
         margin-right: auto;
         margin-left: 0;
+        
+        @include media-breakpoint-up(lg) {
+            padding-right: 100px !important;
+        }
     }
 }
