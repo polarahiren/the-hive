@@ -64,6 +64,31 @@ export class App{
             }
         ]
     });
+
+
+    // process slider
+    $('.process-slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                  slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                }
+            }
+        ]
+    });
     
 
 
