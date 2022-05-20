@@ -67,3 +67,16 @@ footer{
         }
     }
 }
+
+.linke-card {
+    border: 0;
+    border-radius: 7px;
+    .card-body {
+        padding: 20px 17px 21px 23px;
+    }
+    .content-box {
+        margin-top: 14px;
+        font-size: 13px;
+        line-height: 21px;
+    }
+}

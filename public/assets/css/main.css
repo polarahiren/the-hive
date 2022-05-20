@@ -16461,6 +16461,19 @@ footer .footer-social-icons li a:hover svg path {
   color: #ED6C4F;
 }
 
+.linke-card {
+  border: 0;
+  border-radius: 7px;
+}
+.linke-card .card-body {
+  padding: 20px 17px 21px 23px;
+}
+.linke-card .content-box {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 21px;
+}
+
 @media (max-width: 767.98px) {
   .hero-section {
     background-color: #EDEDE5;
