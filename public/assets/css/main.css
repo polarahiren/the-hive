@@ -14981,6 +14981,36 @@ p.error-message {
   }
 }
 
+.download-card {
+  border: 0;
+  box-shadow: 0 0 15px rgba(4, 60, 57, 0.1333333333);
+  margin-bottom: 24px;
+}
+@media (max-width: 767.98px) {
+  .download-card {
+    margin-bottom: 12px;
+  }
+}
+.download-card .card-body {
+  padding: 20px 20px 20px 30px;
+}
+.download-card .download-info .font-normal {
+  letter-spacing: -0.14px;
+}
+.download-card .download-button span {
+  margin-right: 12px;
+}
+.download-card .download-button .button-bg {
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  transition: all 500ms ease;
+  /* IE 10+, Fx 29+ */
+}
+.download-card .download-button:hover .button-bg {
+  transform: rotate(360deg);
+}
+
 /*******************************************************************************
 ******************************* COLOUR VARIABLES *******************************
 *******************************************************************************/
@@ -16961,6 +16991,40 @@ footer .footer-social-icons li a:hover svg path {
 .contact-form .btn-primary:hover {
   background-color: #EDEDE5 !important;
   color: #ED6C4F !important;
+}
+
+@media (min-width: 1400px) {
+  .title-box-section .container {
+    max-width: 1420px;
+  }
+}
+.title-box-section p {
+  line-height: 29px;
+}
+
+.video-box .video-image img {
+  height: 240px;
+}
+.video-box .video-image .video-play {
+  width: 85px;
+  height: 85px;
+  background: rgba(237, 108, 79, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  transition: all 500ms ease;
+  /* IE 10+, Fx 29+ */
+}
+.video-box:hover .video-image .video-play {
+  background: rgba(237, 108, 79, 0.9);
 }
 
 body#tinymce {

@@ -542,3 +542,42 @@
 }
 //  END login page css
 
+.title-box-section{
+    @include media-breakpoint-up(xxl) {
+        .container {
+            max-width: 1420px;
+        }
+    }
+    p{
+        line-height: 29px;
+    }
+}
+
+.video-box{
+    .video-image{
+        img{
+            height: 240px;
+        }
+        .video-play {
+            width: 85px;
+            height: 85px;
+            background: rgba($color: $primary, $alpha: .75);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include generate-transition(all, 500ms, ease);
+        }
+    }
+    &:hover{
+        .video-image{
+            .video-play{
+                background: rgba($color: $primary, $alpha: .90);
+            }
+        }
+    }
+}

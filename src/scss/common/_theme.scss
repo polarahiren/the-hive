@@ -216,3 +216,33 @@ p.error-message {
         }
     }
 }
+
+.download-card {
+    border: 0;
+    box-shadow: 0 0 15px #043c3922;
+    margin-bottom: 24px;
+    @include media-breakpoint-down(md){
+        margin-bottom: 12px;
+    }
+    .card-body {
+        padding: 20px 20px 20px 30px;
+    }
+    .download-info{
+        .font-normal{
+            letter-spacing: -0.14px;
+        }
+    }
+    .download-button{
+        span{
+            margin-right: 12px;
+        }
+        .button-bg{
+            @include generate-transition(all, 500ms, ease);
+        }
+        &:hover{
+            .button-bg{
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
