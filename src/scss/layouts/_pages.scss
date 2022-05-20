@@ -489,3 +489,29 @@
         }
     }
 }
+
+
+
+
+
+
+// login page css
+.login-screen{
+    @include media-breakpoint-up(md){
+        height: 100vh;
+    }
+
+}
+
+.contact-form {
+    border-top: 1px solid rgb(237 237 237 / 30%);
+    padding-top: 35px;
+
+    .btn-primary{
+        &:hover{
+            background-color: $light !important;
+            color: $primary !important;
+        }
+    }
+}
+//  END login page css

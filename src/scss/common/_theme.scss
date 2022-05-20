@@ -125,18 +125,24 @@ p.error-message {
 
 /* input form css */
 .form-control{
-    background: $white;
-    line-height: 2;
+    background: rgb(255 255 255 / 45%);
+    color: #ffffff;
+    line-height: 1.75;
     border: 1px solid transparent;
     font-size: 15px;
-    padding: 10px 1.5rem;
+    padding: 10px 1.1rem;
+    border-radius: 0px;
+    transition: 0.3s all ease-in-out;
 
     &::placeholder{
-        color: #141414;
+        color: #ffffff;
     }
 
     &:focus{
+        color: #ffffff;
         box-shadow: none;
+        border-color: $white;
+        background: rgb(255 255 255 / 45%);
     }
 }
 
