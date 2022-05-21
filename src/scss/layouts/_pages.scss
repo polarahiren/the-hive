@@ -581,3 +581,34 @@
         }
     }
 }
+
+// contact page design
+.contact-details{
+    .contact-icon{
+        width: 45px;
+        height: 45px;
+        border-radius: 100px;
+        background-color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover{
+            background-color: $warning;
+        }
+    }
+}
+.contact-us-section {
+    @include media-breakpoint-up(md) {
+        background-image: url("../images/icons/contact-us-bg.svg");
+        background-repeat: no-repeat;
+        background-position: right -100px bottom 350px;
+        background-size: 70%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        background-size: 50%;
+        background-position: right -100px top -150px;
+    }
+}
+// END contact page design

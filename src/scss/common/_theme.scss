@@ -35,94 +35,6 @@ p.error-message {
     border-radius: 999px;
 }
 
-
-/* nice select */
-.nice-select {
-    border-color: transparent;
-    height: auto;
-    padding-right: 30px;
-    padding-left: 10px;
-
-    &:hover,
-    &:focus,
-    &.open{
-        border-color: transparent;
-    }
-    @include media-breakpoint-down(md) {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    span.current {
-        padding: 0px;
-        font-size: 15px;
-        -webkit-box-orient: vertical;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        color: $primary;
-
-        @include media-breakpoint-down(md) {
-            font-size: 14px;
-        }
-    }
-
-    &:after {
-        content: "";
-        border-bottom: 6px solid $primary;
-        border-right: 6px solid transparent;
-        border-left: 6px solid transparent;
-        transform: rotate(180deg) translateX(10px);
-        right: 15px;
-    }
-
-    &.open:after {
-        transform: rotate(0deg) translateX(0px);
-        right: 19px;
-    }
-
-    .list {
-        width: 100%;
-        min-width: 150px;
-        box-shadow: 0px 10px 26px rgb(25 25 25 / 40%);
-        z-index: 200;
-
-        li {
-            padding: 10px 15px;
-            color: $primary;
-            text-transform: capitalize;
-        }
-    }
-
-    .option:hover {
-        background-color: $primary !important;
-    }
-
-    .option:not(.selected):hover {
-        color: $white;
-    }
-
-    .option.selected {
-        background-color: $primary !important;
-        color: $white !important;
-    }
-
-    &:hover {
-        .option.selected:not(:hover) {
-            background-color: $primary !important;
-        }
-    }
-}
-
-.last-filter{
-    .nice-select .list{
-        right: 0px;
-        left: auto;
-    }
-}
-
 /* input form css */
 .form-control{
     background: rgb(255 255 255 / 45%);
@@ -145,8 +57,16 @@ p.error-message {
         background: rgb(255 255 255 / 45%);
     }
 }
-
 /* END input form css */
+.select-dropdown{
+    background-image: url("../images/icons/caret-down.svg") !important;
+    background-position: center right 15px !important;
+    background-repeat: no-repeat !important;
+
+    &:focus{
+        background-position: center right 15px;
+    }
+}
 
 
 .story-box {
@@ -246,3 +166,73 @@ p.error-message {
         }
     }
 }
+
+// Checkbox Control
+.checkbox-control{
+    .theme-checkbox {
+        width: 17px;
+        height: 17px;
+        border-radius: 5px;
+        border: 1px solid #707070;
+        background: $white;
+        position: relative;
+
+        &::before{
+            content:"";
+            display: block;
+            width: 11px;
+            height: 11px;
+            border-radius: 3px;
+            background: $black;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            z-index: 1;
+            opacity: 0;
+            transform: scale(0);
+            transition: 0.2s all ease-in-out;
+        }
+    }
+    &.checkbox-large{
+        .theme-checkbox{
+            width: 25px;
+            height: 25px;
+            border-radius: 50px;
+            &::before{
+                width: 22px;
+                height: 22px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                background-size: 22px !important;
+            }
+        }
+        & input:checked + .theme-checkbox:before{
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+    &.checkbox-light{
+        .theme-checkbox{
+            border-color: $white;
+            background: $white;
+            &::before{
+                background: url(../images/icons/check-icon.svg);
+            }
+        }
+    }
+
+    input{
+        position: absolute;
+        z-index: 9;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        opacity: 0;
+
+        &:checked + .theme-checkbox:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+// Checkbox Control

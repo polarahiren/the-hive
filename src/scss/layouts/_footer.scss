@@ -21,14 +21,14 @@ footer{
             }
         }
     }
-    .footer-social-icons{
-        li{
-            a{
-                &:hover{
-                    svg path{
-                        fill: $primary;
-                    }
-                }
+}
+
+.footer-social-icons{
+    li{
+        a{
+            color: $white;
+            &:hover{
+                color: $primary;
             }
         }
     }
