@@ -502,7 +502,16 @@
         }
     }
 }
-
+.white-faqs{
+    .accordion-item{
+        background-color: #ffffff;
+        
+    .accordion-button,
+    .accordion-body{
+        color: $secondary;
+    }
+    }
+}
 
 
 
