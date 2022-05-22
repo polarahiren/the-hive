@@ -514,6 +514,43 @@
 }
 
 
+@include media-breakpoint-down(md){
+    .question-section .text-title{
+        font-size: 38px;
+    }
+
+    .my-question-box{
+        height: 300px;
+    }
+}
+
+.question-list{
+    border-top: 1px solid rgb(224 224 224 / 30%);
+    padding: 18px 0;
+
+    .my-question,
+    .question-date{
+        min-width: 180px;
+    }
+
+    @include media-breakpoint-down(md){
+        padding: 30px 0;
+
+        .question-date{
+            font-size: 15px;
+        }
+
+        .my-question{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .question-ans{
+            font-size: 18px;
+            letter-spacing: -0.18px;
+        }
+    }
+}
+
 
 
 // login page css
