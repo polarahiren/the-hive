@@ -223,6 +223,12 @@
             }
         }
     }
+
+    &.bg-secondary{
+        .our-section-bg:before{
+            background-color: $secondary;
+        }
+    }
 }
 // END who we are page
 
@@ -651,5 +657,34 @@
         height: 110px;
       }
     }
+  }
+
+  .back-to-all {
+    border-bottom: 1px solid transparent;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 130px;
+
+      &:hover {
+        border-color: #2C3646;
+      }
+  }
+
+  .social-share-news {
+    position: -webkit-sticky;
+    position: sticky;
+    top: calc(100% - 120px);
+
+    ul a {
+        background-color: $primary;
+        transition: 0.4s all ease-in-out;
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+
+            &:hover {
+                background-color: $secondary;
+            }
+      }
   }
 // END news open page
