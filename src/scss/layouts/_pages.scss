@@ -849,3 +849,22 @@
     }
 }
 // END case study detail
+
+
+// policy page
+.policy-page{
+    background-image: url("../images/background-images/subtraction-bg-arrow-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 900px;
+    background-position: right -150px top -60px;
+
+    @include media-breakpoint-down(md) {
+        background-size: 400px;
+        background-position: right -50px top 10px;
+    }
+
+    .services-lists-group{
+        padding: 26px 35px;
+    }
+}
+// END policy page
