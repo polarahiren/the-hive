@@ -138,6 +138,20 @@
     }
 }
 
+.slick-white-arrow{
+    .slick-prev {
+
+        &:before {
+            background-image: url("../../assets/images/icons/prev-slick-white.svg");
+        }
+    }
+
+    .slick-next {
+        &:before {
+            background-image: url("../../assets/images/icons/next-slick-white.svg");
+        }
+    }
+}
 
 .slider-with-inner-body {
     .card-with-inner-body {
