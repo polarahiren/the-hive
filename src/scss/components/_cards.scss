@@ -206,3 +206,15 @@
 }
 
 // END blog card css
+
+
+
+.case-study-card{
+    .case-study-img {
+        height: 500px;
+
+        @include media-breakpoint-down(lg) {
+            height: 300px;
+        }
+    }
+}

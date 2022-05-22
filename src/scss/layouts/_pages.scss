@@ -688,3 +688,29 @@
       }
   }
 // END news open page
+
+
+// case study page design
+.case-study-list{
+    display: grid;
+    gap: 50px;
+
+    @include media-breakpoint-up(md) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 50px 50px;
+
+        .case-study-card:nth-child(odd){
+            margin-top: 60px;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        gap: 80px 50px;
+
+        .case-study-card:nth-child(odd){
+            margin-top: 100px;
+        }
+    }
+
+}
+// END case study page design
