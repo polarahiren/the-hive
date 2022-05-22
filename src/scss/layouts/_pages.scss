@@ -96,7 +96,10 @@
 
     .bg-section-img{
         max-width: 450px;
-        transform: translateX(50%) translateX(50px);
+
+        @include media-breakpoint-down(md) {
+            transform: translateX(50%) translateX(50px);
+        }
 
         @include media-breakpoint-up(md) {
             max-width: 730px;
@@ -612,3 +615,41 @@
     }
 }
 // END contact page design
+
+
+// news open page
+.service-image{
+    img.img-fluid{
+        height: 560px;
+        @include media-breakpoint-down(lg){
+            height: 400px;
+        }
+    }
+}
+
+.service-image {
+    position: relative;
+    
+    .play-icon {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0px;
+      right: 0;
+      z-index: 9;
+      margin: auto;
+      width: 65px;
+      height: 65px;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  }
+// END news open page
