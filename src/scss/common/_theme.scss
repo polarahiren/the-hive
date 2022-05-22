@@ -141,6 +141,7 @@ p.error-message {
     border: 0;
     box-shadow: 0 0 15px #043c3922;
     margin-bottom: 24px;
+    border-radius: 0px;
     @include media-breakpoint-down(md){
         margin-bottom: 12px;
     }

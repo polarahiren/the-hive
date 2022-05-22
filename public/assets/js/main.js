@@ -11708,8 +11708,30 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
       siblings.removeClass('active');
       jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).addClass('active');
     }
+  }); // END tab filter js
+  // video filter
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".video-filter-btn").click(function () {
+    var value = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('video-filter');
+
+    if (value == "all") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.video-filter').show('700');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".video-filter").not('.' + value).hide('2000');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.video-filter').filter('.' + value).show('2000');
+    }
+
+    var filterOpen = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).hasClass("active");
+
+    if (filterOpen) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.video-filter-btn').removeClass('active');
+    } else {
+      var siblings = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.video-tab-nav').find(".active");
+      siblings.removeClass('active');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).addClass('active');
+    }
   });
-}); // END tab filter js
+});
 
 /***/ }),
 

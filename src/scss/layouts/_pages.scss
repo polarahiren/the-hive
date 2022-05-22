@@ -356,7 +356,8 @@
     }
 }
 
-.filter-tab-nav{
+.filter-tab-nav,
+.video-tab-nav{
     margin-left: 20px;
     li{
         margin-right: 16px;
@@ -366,7 +367,8 @@
     }
 }
 
-.filter-tab-btn{
+.filter-tab-btn,
+.video-filter-btn{
     min-width: 96px;
     padding: 9px 26px;
     background-color: $primary;
