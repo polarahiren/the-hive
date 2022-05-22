@@ -330,53 +330,74 @@
 
     <main>
         <div class="bg-light py-5">
-            <div class="container my-5 py-5">
+            <div class="container my-5 pt-5 py-md-5">
                 <div class="pt-md-5 mt-md-5 text-secondary">
                     <span class="text-primary small-label mb-3">CASE STUDIES</span>
                     <h1 class="py-2 text-6xl md:text-8xl font-light">How We’ve Helped</h1>
                     <p class="col-12 col-md-8 col-xl-7">Cras elit massa, malesuada id condimentum vel, convallis at urna. Nulla sollicitudin odio sed felis pretium gravida. Mauris condimentum, orci vel mattis vestibulum, arcu orci ultrices dolor. sit amet porttitor nisi lacus sed tellus.</p>
 
-                    <div class="d-flex align-items-center overflow-auto">
+                    <div class="d-flex align-items-center overflow-auto text-capitalize">
                         <span class="text-sm text-secondary d-block flex-shrink-0">Filter by:</span>
                         <ul class="filter-tab-nav d-flex align-items-center mb-0 p-0">
                             <li><a href="javascript:void(0);" class="flex-shrink-0 text-decoration-none text-xs text-center filter-tab-btn active" data-filter="all">View All</a></li>
-                            <li><a href="javascript:void(0);" class="flex-shrink-0 text-decoration-none text-xs text-center filter-tab-btn" data-filter="general">filter1</a></li>
-                            <li><a href="javascript:void(0);" class="flex-shrink-0 text-decoration-none text-xs text-center filter-tab-btn" data-filter="podcasts">filter2</a></li>
+                            <li><a href="javascript:void(0);" class="flex-shrink-0 text-decoration-none text-xs text-center filter-tab-btn" data-filter="filter1">filter 1</a></li>
+                            <li><a href="javascript:void(0);" class="flex-shrink-0 text-decoration-none text-xs text-center filter-tab-btn" data-filter="filter2">filter 2</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="case-study-list pt-md-4 mt-5">
-                    <a href="javascript:void(0);" class="d-block case-study-card text-dark text-decoration-none">
-                        <div class="case-study-img mb-4">
+                    <a href="javascript:void(0);" class="case-study-card text-dark text-decoration-none filter filter1 filter2">
+                        <div class="case-study-img mb-4 position-relative">
                             <img src="assets/images/cards/case-study-img-1.png" class="w-100 h-100 object-cover" alt="case study card image">
+
+                            <!-- category tags  -->
+                            <ul class="d-flex flex-wrap p-4 case-study-tag position-absolute bottom-0 w-100 start-0 m-0">
+                                <li class="text-sm text-capitalize">filter 1</li>
+                                <li class="text-sm text-capitalize">filter 2</li>
+                            </ul>
                         </div>
                         <h4 class="mb-3 font-light">Transforming working cultures</h4>
                         <p class="text-truncate text-truncate2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
                     </a>
 
 
-                    <a href="javascript:void(0);" class="d-block case-study-card text-dark text-decoration-none">
-                        <div class="case-study-img mb-4">
+                    <a href="javascript:void(0);" class="case-study-card text-dark text-decoration-none filter filter1">
+                        <div class="case-study-img mb-4 position-relative">
                             <img src="assets/images/cards/case-study-img-2.png" class="w-100 h-100 object-cover" alt="case study card image">
+
+                            <!-- category tags  -->
+                            <ul class="d-flex flex-wrap p-4 case-study-tag position-absolute bottom-0 w-100 start-0 m-0">
+                                <li class="text-sm text-capitalize">filter 1</li>
+                            </ul>
                         </div>
                         <h4 class="mb-3 font-light">Transforming working cultures</h4>
                         <p class="text-truncate text-truncate2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
                     </a>
 
 
-                    <a href="javascript:void(0);" class="d-block case-study-card text-dark text-decoration-none">
-                        <div class="case-study-img mb-4">
+                    <a href="javascript:void(0);" class="case-study-card text-dark text-decoration-none filter filter2">
+                        <div class="case-study-img mb-4 position-relative">
                             <img src="assets/images/cards/case-study-img-3.png" class="w-100 h-100 object-cover" alt="case study card image">
+                            
+                            <!-- category tags  -->
+                            <ul class="d-flex flex-wrap p-4 case-study-tag position-absolute bottom-0 w-100 start-0 m-0">
+                                <li class="text-sm text-capitalize">filter 2</li>
+                            </ul>
                         </div>
                         <h4 class="mb-3 font-light">Transforming working cultures</h4>
                         <p class="text-truncate text-truncate2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
                     </a>
 
 
-                    <a href="javascript:void(0);" class="d-block case-study-card text-dark text-decoration-none">
-                        <div class="case-study-img mb-4">
+                    <a href="javascript:void(0);" class="case-study-card text-dark text-decoration-none filter filter1">
+                        <div class="case-study-img mb-4 position-relative">
                             <img src="assets/images/cards/case-study-img-4.png" class="w-100 h-100 object-cover" alt="case study card image">
+
+                            <!-- category tags  -->
+                            <ul class="d-flex flex-wrap p-4 case-study-tag position-absolute bottom-0 w-100 start-0 m-0">
+                                <li class="text-sm text-capitalize">filter 1</li>
+                            </ul>
                         </div>
                         <h4 class="mb-3 font-light">Transforming working cultures</h4>
                         <p class="text-truncate text-truncate2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
