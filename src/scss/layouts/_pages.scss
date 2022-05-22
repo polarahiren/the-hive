@@ -733,6 +733,19 @@
 // END case study page design
 
 // case study detail
+.back-to-case-study{
+    display: block;
+    writing-mode: vertical-lr;
+    min-height: 190px;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: rotate(180deg) translateY(50%);
+}
+
 .case-study-detail-banner{
     height: 350px;
 
