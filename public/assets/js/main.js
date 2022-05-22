@@ -11741,21 +11741,7 @@ var App = /*#__PURE__*/function () {
   _createClass(App, [{
     key: "init",
     value: function init() {
-      $('.large-slider').slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        speed: 300,
-        autoplay: true,
-        slidesToShow: 1,
-        responsive: [{
-          breakpoint: 768,
-          settings: {
-            arrows: true
-          }
-        }]
-      }); //   testimonial slider
-
+      //   testimonial slider
       $('.testimonial-slider').slick({
         dots: true,
         arrows: false,
@@ -11809,6 +11795,15 @@ var App = /*#__PURE__*/function () {
             slidesToShow: 1
           }
         }]
+      }); // case study slider
+
+      $('.case-study-large-slider').slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 300,
+        autoplay: true,
+        slidesToShow: 1
       });
       /* related products slider */
 

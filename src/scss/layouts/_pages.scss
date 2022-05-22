@@ -743,4 +743,48 @@
         height: 550px;
     }
 }
+
+.case-study-large-slider{
+    line-height: 0;
+
+    @include media-breakpoint-up(md) {
+        padding-right: 60px;
+    }
+
+    .case-study-slide{
+        height: 400px;
+        line-height: 0;
+
+        @include media-breakpoint-up(md) {
+            height: 650px;
+        }
+    }
+
+    .slick-arrow{
+        left: auto;
+        right: 0px;
+        top: auto;
+
+        @include media-breakpoint-down(md) {
+            &.slick-prev{
+                right: 51%;
+            }
+
+            &.slick-next{
+                right: 49%;
+                transform: translateX(100%);
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            &.slick-prev{
+                bottom: 55px;
+            }
+
+            &.slick-next{
+                bottom: 0px;
+            }
+        }
+    }
+}
 // END case study detail
