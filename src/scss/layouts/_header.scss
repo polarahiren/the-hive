@@ -15,6 +15,25 @@ body.header-transparent{
             ul li {
                 a{
                     color: $white;
+                    &.btn{
+                        background-color: $white;
+                        color: $black;
+                        border: 0;
+                        &:hover{
+                            background-color: $primary;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            &:not(.header-fixed){
+                .btn-secondary{
+                    background-color: $white !important;
+                    border-color: $white !important;
+                    color: $secondary !important;
                 }
             }
         }
