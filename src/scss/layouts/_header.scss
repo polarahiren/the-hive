@@ -1,4 +1,6 @@
-
+.fake-header{
+    display: block;
+}
 
 //   transparent header
 body.header-transparent{
@@ -13,6 +15,16 @@ body.header-transparent{
             ul li {
                 a{
                     color: $white;
+                }
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            &:not(.header-fixed){
+                .btn-secondary{
+                    background-color: $white !important;
+                    border-color: $white !important;
+                    color: $secondary !important;
                 }
             }
         }
