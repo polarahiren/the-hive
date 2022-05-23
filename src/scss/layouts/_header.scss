@@ -22,6 +22,12 @@ body.header-transparent{
     .navbar-toggler{
         @include media-breakpoint-down(lg) {
             color: $white;
+            fill: $white;
+        }
+
+        @include media-breakpoint-down(md) {
+            color: #000B18;
+            fill: #000B18;
         }
     }
 
@@ -30,6 +36,7 @@ body.header-transparent{
         .navbar-toggler{
             @include media-breakpoint-down(lg) {
                 color: $secondary;
+                fill: $secondary;
             }
         }
     }
