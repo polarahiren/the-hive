@@ -153,34 +153,6 @@
     }
 }
 
-.slider-with-inner-body {
-    .card-with-inner-body {
-        position: relative;
-
-        .card-body {
-            font-size: 14px;
-            line-height: 1.8;
-
-            @include media-breakpoint-up(lg) {
-                padding: 50px;
-            }
-
-            .card-title {
-                font-size: $headingM;
-            }
-
-            p {
-                margin-bottom: 20px;
-                max-width: 520px;
-                @include media-breakpoint-down(md) {
-                    margin-bottom: 15px;
-                }
-            }
-        }
-    }
-
-}
-
 .large-slider {
     .slick-slide {
         @include media-breakpoint-up(sm) {
@@ -201,49 +173,7 @@
 }
 
 
-/* product gallery Slider */
-.product-gallery {
-    @include media-breakpoint-down(sm) {
-        margin: 0px -14px;
-    }
-    img {
-        height: 530px;
-        @include media-breakpoint-down(md) {
-            height: 230px;
-        }
-    }
-
-    &.slick-indicators {
-        @include media-breakpoint-up(md) {
-
-            .slick-prev,
-            .slick-next {
-                bottom: 40px;
-            }
-
-            .slick-prev {
-                left: auto;
-                right: 90px;
-            }
-
-            .slick-next {
-                left: auto;
-                right: 30px;
-            }
-        }
-
-        @include media-breakpoint-down(md) {
-            .slick-prev,
-            .slick-next {
-                bottom: -60px;
-            }
-        }
-    }
-}
-
-
-.team-slider,
-.related-products-slider{
+.team-slider{
     position: static;
 
     .slick-list {
@@ -251,39 +181,6 @@
     }
 }
 
-/* related products slider */
-.related-products-slider {
-    max-width: 90%;
-    .slick-list {
-        .product-card{
-            padding-right: 30px;
-        }
-    }
-    .product-card .product-card-body span{
-        border-bottom: 0px;
-    }
-}
-
-/* END related products slider */
-
-
-.logos-slider{
-    img{
-        margin: 0 auto;
-        max-width: 130px;
-        max-height: 80px;
-
-        @include media-breakpoint-down(lg) {
-            max-width: 80px;
-            max-height: 60px;
-        }
-
-        @include media-breakpoint-down(md) {
-            max-width: 70px;
-            max-height: 50px;
-        }
-    }
-}
 
 .slider-overflow-visable{
     .slick-list {

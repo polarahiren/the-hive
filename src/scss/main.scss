@@ -50,23 +50,9 @@ $grid-breakpoints: (
 
 
 @import "components/_buttons";
-@import "components/_comments";
-@import "components/_forms";
 @import "components/_cards";
-@import "components/_card-with-inner-body";
 @import "components/_modal";
 @import "components/_slick";
 @import "layouts/_header";
-@import "layouts/_sidebar";
 @import "layouts/_footer";
 @import "layouts/_pages";
-@import "layouts/_posts";
-@import "layouts/_tinymce";
-
-@import "layouts/_responsive";
-
-
-//common parts
-
-@import "parts/_mobile_header";
-@import "parts/_block_popup";
