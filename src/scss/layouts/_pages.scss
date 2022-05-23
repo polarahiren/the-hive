@@ -250,12 +250,12 @@
     }
     @include media-breakpoint-up(md){
         position: sticky;
-        z-index: 999;
+        z-index: 501;
     }
     @include media-breakpoint-down(md){
         position: relative;
         top: 0;
-        z-index: 999;
+        z-index: 501;
     }
 
     &.bg-secondary{
@@ -560,7 +560,7 @@
     }
     @include media-breakpoint-down(md){
         min-height: 100vh;
-        padding-top: 60px;
+        padding-top: 100px;
         padding-bottom: 450px;
     }
 
@@ -792,6 +792,7 @@
     top: 50%;
     left: 0;
     transform: rotate(180deg) translateY(50%);
+    z-index: 9;
 }
 
 .case-study-detail-banner{
