@@ -33,10 +33,12 @@ button,
 }
 
 
-.btn-primary{
+.btn-primary,
+.btn-secondary{
     &:hover{
-        background-color: $secondary;
-        border-color:  $secondary;
+        background-color: $light;
+        border-color:  $light;
+        color: $primary;
     }
 }
 
