@@ -254,15 +254,12 @@
         position: relative;
         top: 0;
         z-index: 501;
-<<<<<<< Updated upstream
-=======
     }
 
     @include media-breakpoint-down(lg){
         .btn{
             min-width: auto;
         }
->>>>>>> Stashed changes
     }
 
     &.bg-secondary{
