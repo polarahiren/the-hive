@@ -59,6 +59,9 @@
     .modal-title{
         @include media-breakpoint-down(md){
             line-height: 44px;
+            span{
+                font-weight: 600;
+            }
         }
     }
 

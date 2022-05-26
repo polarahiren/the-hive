@@ -792,6 +792,23 @@
             margin-top: 100px;
         }
     }
+    .case-study-card{
+        // .case-study-img{
+        //     img{
+        //         height: 486px;
+        //         @include media-breakpoint-down(md) {
+        //             height: 275px;
+        //         }
+        //     }
+        // }
+        .card-heading{
+            font-weight: 300;
+            @include media-breakpoint-down(md) {
+                font-size: $headingS;
+                font-weight: 500;
+            }
+        }
+    }
 }
 .case-study-tag{
     li{
@@ -829,13 +846,13 @@
 }
 
 .case-study-detail-banner{
-    height: 350px;
+    height: 320px;
 
-    @include media-breakpoint-up(md) {
-        height: 450px;
-    }
+    // @include media-breakpoint-up(md) {
+    //     height: 450px;
+    // }
     @include media-breakpoint-up(lg) {
-        height: 550px;
+        height: 445px;
     }
 }
 
@@ -907,6 +924,28 @@
     @include media-breakpoint-down(md){
         .inner-heading{
             font-size: $headingM;
+        }
+    }
+}
+
+.case-study-hero-section{
+    @include media-breakpoint-down(md){
+        color: $black;
+    }
+}
+
+.case-study-details-section{
+    .title-text{
+        @include media-breakpoint-down(md){
+            font-size: $headingS;
+        }
+    }
+}
+
+.team-card{
+    .member-name{
+        @include media-breakpoint-down(md){
+            color: $secondary;
         }
     }
 }

@@ -143,10 +143,10 @@
 .case-study-card{
     display: block;
     .case-study-img {
-        height: 500px;
+        height: 486px;
 
         @include media-breakpoint-down(lg) {
-            height: 300px;
+            height: 275px;
         }
     }
 }

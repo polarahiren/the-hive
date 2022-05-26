@@ -14974,6 +14974,13 @@ p.error-message {
   height: 25px;
   border-radius: 50px;
 }
+@media (max-width: 767.98px) {
+  .checkbox-control.checkbox-large .theme-checkbox {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+  }
+}
 .checkbox-control.checkbox-large .theme-checkbox::before {
   width: 22px;
   height: 22px;
@@ -15698,11 +15705,11 @@ button,
   display: block;
 }
 .case-study-card .case-study-img {
-  height: 500px;
+  height: 486px;
 }
 @media (max-width: 990.98px) {
   .case-study-card .case-study-img {
-    height: 300px;
+    height: 275px;
   }
 }
 
@@ -15807,6 +15814,9 @@ button,
 @media (max-width: 767.98px) {
   .modal .modal-title {
     line-height: 44px;
+  }
+  .modal .modal-title span {
+    font-weight: 600;
   }
 }
 .modal.show {
@@ -16962,6 +16972,15 @@ footer .footer-contact a:hover .icon-box svg path {
     margin-top: 100px;
   }
 }
+.case-study-list .case-study-card .card-heading {
+  font-weight: 300;
+}
+@media (max-width: 767.98px) {
+  .case-study-list .case-study-card .card-heading {
+    font-size: 28px;
+    font-weight: 500;
+  }
+}
 
 .case-study-tag li {
   background-color: #ffffff;
@@ -16995,16 +17014,11 @@ footer .footer-contact a:hover .icon-box svg path {
 }
 
 .case-study-detail-banner {
-  height: 350px;
-}
-@media (min-width: 768px) {
-  .case-study-detail-banner {
-    height: 450px;
-  }
+  height: 320px;
 }
 @media (min-width: 991px) {
   .case-study-detail-banner {
-    height: 550px;
+    height: 445px;
   }
 }
 
@@ -17067,5 +17081,23 @@ footer .footer-contact a:hover .icon-box svg path {
 @media (max-width: 767.98px) {
   .single-resources .inner-heading {
     font-size: 38px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .case-study-hero-section {
+    color: #000000;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .case-study-details-section .title-text {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .team-card .member-name {
+    color: #043C39;
   }
 }
