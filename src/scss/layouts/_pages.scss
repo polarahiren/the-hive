@@ -261,6 +261,8 @@
         position: relative;
         top: 0;
         z-index: 501;
+        margin-left: -12px;
+        margin-right: -12px;
     }
 
     @include media-breakpoint-down(lg){
