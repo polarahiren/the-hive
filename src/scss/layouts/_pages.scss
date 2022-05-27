@@ -317,7 +317,7 @@
             border-width: 0px 0px 0px 2px;
             padding-left: 10px;
             @include media-breakpoint-down(md){
-                border-width: 0px 0px 0px 1px;
+                border-width: 0px;
             }
         }
         &:last-child{
