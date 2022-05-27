@@ -36,16 +36,16 @@ $(function () {
 // ===========================================================================
 
 // Select2 JS
-$(document).ready(function() {
-    $('.select-dropdown').select2();
-    $('.product-option, .disable-search').select2({
-            minimumResultsForSearch: -1
-    });
-});
+// $(document).ready(function() {
+//     $('.select-dropdown').select2();
+//     $('.product-option, .disable-search').select2({
+//             minimumResultsForSearch: -1
+//     });
+// });
 
 
 // fancy box
-require('@fancyapps/ui/src/Fancybox/Fancybox');
+// require('@fancyapps/ui/src/Fancybox/Fancybox');
 
 // ===========================================================================
 
@@ -80,17 +80,19 @@ $("[data-menu='true']").click(function(){
     }
 });
 
-$(".menu-bg-overlay, .menu-close").click(function () {
-    $(".custom-mega-menu").removeClass("show");
-    $("body").removeClass("fixed-bg");
-    $(".mega-menu").removeClass("open");
+
+// fixed screen on mobile menu open
+$(document).ready(function(){
+    $(".navbar-toggler").click(function () {
+        $("body").addClass("fixed-bg");
+    });
+
+    $(".menu-close").click(function () {
+        $("body").removeClass("fixed-bg");
+    });
 });
 
-$(".mega-menu-back").click(function () {
-    $(".custom-mega-menu").removeClass("show");
-    $("body").removeClass("fixed-bg");
-    $(".mega-menu").removeClass("open");
-});
+
 
 /* smooth scroll */
 var targetScriollOffset = 0;

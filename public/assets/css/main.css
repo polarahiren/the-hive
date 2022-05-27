@@ -16184,6 +16184,10 @@ body header.header-fixed .navbar {
     padding-right: 0px !important;
   }
 }
+.fixed-bg {
+  overflow: hidden;
+}
+
 @media (min-width: 1400px) {
   footer .container {
     max-width: 1420px;
